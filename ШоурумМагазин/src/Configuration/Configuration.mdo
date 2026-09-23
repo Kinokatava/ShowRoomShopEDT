@@ -41,4 +41,5 @@
   </languages>
   <catalogs>Catalog.оно</catalogs>
   <catalogs>Catalog.Поставщики</catalogs>
+  <catalogs>Catalog.Справочник</catalogs>
 </mdclass:Configuration>
