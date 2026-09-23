@@ -38,5 +38,6 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <catalogs>Catalog.Мамалыаг</catalogs>
   <catalogs>Catalog.Поставщики</catalogs>
 </mdclass:Configuration>
