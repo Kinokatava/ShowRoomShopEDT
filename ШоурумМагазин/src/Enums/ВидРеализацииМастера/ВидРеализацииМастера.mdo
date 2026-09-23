@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e468abe-f30c-4ee0-aae7-aaf7afea1f4a">
+  <producedTypes>
+    <refType typeId="7609f74a-ce3d-4066-a87f-53c98de9d7e1" valueTypeId="a0061b86-6c0f-4ba5-9841-f0df053200aa"/>
+    <listType typeId="b9066d94-5cc4-4dbb-9eb1-d1f1baa72aac" valueTypeId="92797e72-dfbd-474c-ad58-8008e16501f0"/>
+    <managerType typeId="b0de7562-8ba2-4472-bbb1-95c73761f41c" valueTypeId="fbba9d63-e318-43c9-af52-0bb7dde586e7"/>
+  </producedTypes>
+  <name>ВидРеализацииМастера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид реализации мастера</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f3c4ca5e-24cf-4255-a87d-71714e2bfa11">
+    <name>Комиссионная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссионная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8181896c-bc57-4af8-9753-b5e4c577a4ea">
+    <name>Аренда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аренда</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

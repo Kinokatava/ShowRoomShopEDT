@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a04d4d48-7e38-4dac-8d0f-dd7bb4b1584c">
-  <name>ShowRoomShop</name>
-  <synonym>
-    <key>ru</key>
-    <value>Show room shop</value>
-  </synonym>
-  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="33015108-b244-47a0-8b11-d43f8b785deb"/>
-  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="de39c9d7-d13b-430d-8278-95debe513ec4"/>
-  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="034d85de-c195-49e8-a667-ba9d2ce8c117"/>
-  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="6764c293-f3c6-413b-8cee-bb059a98b01e"/>
-  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="b0d113d2-d955-4f3c-8e32-20ad83f4e2b7"/>
-  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="a13a94b7-37c1-4b37-883d-6c3eb57fc480"/>
-  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="ad38284f-098b-4ca6-915c-e694d6feb82c"/>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="026d6741-ec93-4256-8f33-43b4a02d80d5">
+  <name>Конфигурация</name>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="bf1dc904-c881-48e4-98d3-53796664ef23"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="285b31fb-4751-4230-b229-9bd73d4057b4"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="1e9dbdbf-5ab7-4319-b096-0ebcb92d9aa8"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="f1a242c5-9d5e-446f-9902-c89395f3e1df"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="70a74614-1741-4ade-8c5d-af5612f9953d"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="688affe2-0f8a-495d-97e0-4ae45cc2866f"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="213202c2-a1c7-4c8f-8f7e-f03cdeb849ea"/>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -24,14 +20,16 @@
       <use>true</use>
     </functionality>
   </usedMobileApplicationFunctionalities>
+  <clientApplicationWindowsOpenVariant>OpenDataInDialogs</clientApplicationWindowsOpenVariant>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <dataLockControlMode>Managed</dataLockControlMode>
   <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
   <modalityUseMode>DontUse</modalityUseMode>
   <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
-  <interfaceCompatibilityMode>Version8_5EnableTaxi</interfaceCompatibilityMode>
+  <interfaceCompatibilityMode>Version8_5</interfaceCompatibilityMode>
+  <version85InterfaceMigrationMode>Use</version85InterfaceMigrationMode>
   <compatibilityMode>8.5.1</compatibilityMode>
-  <languages uuid="9d73643a-83e4-4163-aaab-f5663e42e169">
+  <languages uuid="729dfb3c-117d-4c72-a462-8d395d87c22b">
     <name>Русский</name>
     <synonym>
       <key>ru</key>
@@ -39,7 +37,38 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
-  <catalogs>Catalog.оно</catalogs>
-  <catalogs>Catalog.Поставщики</catalogs>
-  <catalogs>Catalog.Справочник</catalogs>
+  <subsystems>Subsystem.Документы</subsystems>
+  <subsystems>Subsystem.Отчеты</subsystems>
+  <subsystems>Subsystem.РегистрыНакопления</subsystems>
+  <subsystems>Subsystem.Справочники</subsystems>
+  <catalogs>Catalog.Должности</catalogs>
+  <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.ПолкиИСтеллажи</catalogs>
+  <catalogs>Catalog.Сотрудники</catalogs>
+  <documents>Document.АрендаПолки</documents>
+  <documents>Document.ВыкладкаИзделийНаПолку</documents>
+  <documents>Document.ВыплатаМастеру</documents>
+  <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.НачисленияАренды</documents>
+  <documents>Document.ОплатаАренды</documents>
+  <documents>Document.ПоступлениеТовара</documents>
+  <documents>Document.ПриемкаИзделийМастера</documents>
+  <documents>Document.Продажа</documents>
+  <enums>Enum.ВидРеализацииМастера</enums>
+  <enums>Enum.ВидыКонтрагентов</enums>
+  <enums>Enum.ВидыНоменклатуры</enums>
+  <enums>Enum.СтатусСотрудника</enums>
+  <reports>Report.ЗадолженностьМастерам</reports>
+  <reports>Report.ЗадолженностьПоАренде</reports>
+  <reports>Report.ОстаткиНоменлатуры</reports>
+  <reports>Report.Продажи</reports>
+  <informationRegisters>InformationRegister.СтоимостьАрендыПолки</informationRegisters>
+  <informationRegisters>InformationRegister.ЦенаИзделийМастеров</informationRegisters>
+  <informationRegisters>InformationRegister.ЦенаСобственныхТоваров</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиНоменклатуры</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.РасчетПоАренде</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.РасчетыСМастерами</accumulationRegisters>
 </mdclass:Configuration>

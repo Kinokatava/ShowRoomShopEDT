@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ee15107-73e1-4e70-9be6-d409cab25498">
+  <producedTypes>
+    <objectType typeId="a11ee042-388d-44a9-9a00-7ea4a50515ad" valueTypeId="254e65d4-86af-4ef7-aa7d-aad4c23525ce"/>
+    <refType typeId="7f44cdb4-de37-4a4e-8e1b-5c2e9da08bec" valueTypeId="7acdd5ea-6e3a-4acd-8863-d1e9e93720cc"/>
+    <selectionType typeId="34ddedcc-9fc3-479a-a84b-1d1f4e56d7c8" valueTypeId="7c368c80-3ebb-4de3-b6af-f78b8bf4a517"/>
+    <listType typeId="b18349f4-c7c0-407f-b4b9-776c923f9d84" valueTypeId="374516fc-aeb9-45e6-a313-bcbbacb9cb85"/>
+    <managerType typeId="80a0ea0d-e168-49a9-adff-faa84c54ccd7" valueTypeId="ae491882-347f-4d35-82d6-2ef8542badac"/>
+  </producedTypes>
+  <name>ПолкиИСтеллажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Полки и стеллажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПолкиИСтеллажи.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПолкиИСтеллажи.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

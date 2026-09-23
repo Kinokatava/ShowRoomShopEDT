@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3986c543-7e68-4a4b-abe6-9c11b6f169e9">
+  <producedTypes>
+    <selectionType typeId="1e65d2ef-ce5d-4d98-9e5c-0881fba06f8e" valueTypeId="b3fa4551-400f-45c0-a16a-84bb087ffb04"/>
+    <listType typeId="87873d34-b5da-48aa-967f-4ff43e4634a2" valueTypeId="8f5855ea-cf57-4393-9489-0dc680a90a37"/>
+    <managerType typeId="3f7b54a3-61eb-4782-9b60-9872d749a7e4" valueTypeId="d29275ba-42dd-4a1d-acb3-2715a1c1c5b1"/>
+    <recordSetType typeId="11405016-f379-49f7-a7cf-f9653b1194cf" valueTypeId="c8b5b6ca-e80c-45a4-833f-9f106cd2fc15"/>
+    <recordKeyType typeId="03ec6eed-d58d-4708-bcfa-1109f4de750c" valueTypeId="d445caff-4122-419b-bd49-35c7a683a36e"/>
+    <recordType typeId="3415fc86-80e1-4be1-b186-0405d4a66ff2" valueTypeId="cbefbb51-2609-4ee1-b8bc-c20372537315"/>
+  </producedTypes>
+  <name>РасчетПоАренде</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет по аренде</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="c741bc53-e989-4732-93e0-2dffa2bf5b6a">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="172e68c2-0796-4cbc-b1f3-8a24dbce991f">
+    <name>Мастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9d2769ee-5fad-4311-abb7-6b7bc3da17d6">
+    <name>Полка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПолкиИСтеллажи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

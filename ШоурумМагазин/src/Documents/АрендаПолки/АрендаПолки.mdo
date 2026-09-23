@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="592fd825-9d19-40ae-99d8-ff2525f9452b">
+  <producedTypes>
+    <objectType typeId="6875f009-3d77-4f8e-ba9a-7371e2f89ea2" valueTypeId="dd6d7db3-0565-478b-8ddc-0d6c7109acfe"/>
+    <refType typeId="2b6e40fc-8380-401d-8522-7037b3ed98de" valueTypeId="4cef5489-2f92-4df0-b3dc-9b162b9d5b4b"/>
+    <selectionType typeId="c51bb1e1-0896-4549-9a0a-f8c7ec6f6a9b" valueTypeId="18e64411-e806-46f7-8562-db1d3b756dc3"/>
+    <listType typeId="459fdc0d-5a03-4569-bbd4-f8e012a475e4" valueTypeId="2a675e53-41bd-40b0-b5ff-b74a8b21a5d7"/>
+    <managerType typeId="c1f286fb-d529-44ca-89d9-77529e16b406" valueTypeId="fcabfcd4-8562-4192-8521-9c0be23d4879"/>
+  </producedTypes>
+  <name>АрендаПолки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аренда полки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.АрендаПолки.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="2ed19c91-60f4-46b7-8cb3-5afd6de2e9b7">
+    <name>Мастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидКонтрагента</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыКонтрагентов.EnumValue.Мастер</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6d1493b8-def8-4f4c-b816-aa0a4ea409db">
+    <name>Полка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПолкиИСтеллажи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="04f165b3-608b-4f53-b2f6-3ea67ae460d7">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="21300bf8-a3bf-4829-a377-06d52f71a24e">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="59313d78-21e2-4b7b-ae48-d6742f366737">
+    <name>СтоимостьЗаМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость за месяц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

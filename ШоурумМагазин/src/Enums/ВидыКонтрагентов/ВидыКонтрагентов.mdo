@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2694833-0376-4b0c-96a9-935bed4a6c63">
+  <producedTypes>
+    <refType typeId="b0745db1-7e73-4c2a-961e-ee7250b8b4c9" valueTypeId="cb3303e6-00c9-42b3-aca1-c84d8d90c85f"/>
+    <listType typeId="e393b36e-0dc5-47b8-9277-29649fbedc4d" valueTypeId="d8ff363d-2b32-4174-bc23-b8f716cc3f5d"/>
+    <managerType typeId="2727c3cb-56e5-47e7-9df5-032a99129abf" valueTypeId="7d341666-01f4-49c7-afb0-657e0a27009b"/>
+  </producedTypes>
+  <name>ВидыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды контрагентов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="219f948c-17d3-478e-93c2-d68eb61b7315">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c6ab8d8a-0c4e-4ecc-96f9-cd327f4fb404">
+    <name>Мастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

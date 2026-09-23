@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a3e4b88-3003-4a53-963d-4cc3d26b269b">
+  <producedTypes>
+    <selectionType typeId="07010e46-e098-40fa-9570-6dc887ddd27d" valueTypeId="d4a099bf-cfd5-4f26-b71b-3a0952d842a2"/>
+    <listType typeId="1bb8ce2d-1a73-43c6-b9cc-d5f727f37036" valueTypeId="fe740998-8857-4ba1-90f7-38f8eb420e77"/>
+    <managerType typeId="852a1a03-1f40-4615-9cbd-630b8ffa5870" valueTypeId="bdb54d6c-e626-468b-b1bb-07838dd77386"/>
+    <recordSetType typeId="26860db8-f1f5-4c6e-9d78-676647f44370" valueTypeId="55cd011b-28c9-4eae-abf8-60a3a542088a"/>
+    <recordKeyType typeId="d016ce39-bf39-4a5b-be07-99df6bce90bd" valueTypeId="3d5ae7c0-4a4b-48a9-a37d-cca84cd4efdf"/>
+    <recordType typeId="069c3340-9f5d-48cf-a3da-5e5533f632cc" valueTypeId="421090f6-1850-46f6-8041-d811f61f2a36"/>
+    <recordManagerType typeId="68a28bf5-9624-40b5-9d24-5b90044e88d3" valueTypeId="13cce708-bf5b-48c1-bdba-ae70d2cd6efa"/>
+  </producedTypes>
+  <name>ЦенаСобственныхТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цена собственных товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dfe03163-04fd-4843-a03f-b3e95a94cf35">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5f98cb5e-827f-4719-8cb6-dff4520b8dd1">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыНоменклатуры.EnumValue.Товар</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

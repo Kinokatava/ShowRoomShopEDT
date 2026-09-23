@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2828be6c-76b3-4802-80ed-2bfa8ef21877">
+  <producedTypes>
+    <objectType typeId="6335c8a3-4fd9-4e05-9ff7-6a1adb4343b3" valueTypeId="c29c5237-c76c-4521-97cf-0bc81d399111"/>
+    <refType typeId="4d17427e-198c-4742-a3c8-b0cbd998269a" valueTypeId="2b5bef15-5ad6-4c02-9cd8-75d2979cf58b"/>
+    <selectionType typeId="6355e89b-1ba8-4c55-b1bc-111de520481f" valueTypeId="9512ef25-53ed-41ba-8964-9bd810bfec2d"/>
+    <listType typeId="797c4bb5-6273-4d06-ac6c-c299c91f90eb" valueTypeId="90c613dd-4b2d-4156-8926-3ab09e1d44b1"/>
+    <managerType typeId="3cab74c1-c204-4950-8834-6ddc649a1784" valueTypeId="b8e6e599-15b3-49df-9e4d-6bab9d9e6ec9"/>
+  </producedTypes>
+  <name>ПриемкаИзделийМастера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приемка изделий мастера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриемкаИзделийМастера.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиНоменклатуры</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="60a44398-9414-4520-86ea-a96ddce34bf6">
+    <name>Мастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидКонтрагента</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидыКонтрагентов.EnumValue.Мастер</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="08d247e5-cd73-463c-acc0-06487994b854">
+    <producedTypes>
+      <objectType typeId="cf045c29-b536-44eb-a583-9edb85cf589a" valueTypeId="ce9a8262-87f0-4efa-acf9-6a33b4ee41d7"/>
+      <rowType typeId="f89199b9-7edf-42eb-b714-3963170a4c7e" valueTypeId="0d82b8bd-f29b-46c0-8a30-ce9d03d374ad"/>
+    </producedTypes>
+    <name>Изделия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изделия</value>
+    </synonym>
+    <attributes uuid="0c92c22a-710b-4597-9f7e-e22fddefad60">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ВидНоменклатуры</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыНоменклатуры.EnumValue.ИзделиеМастера</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ddb236ae-59ad-482c-a4c9-6d604371e7c1">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="08a44f3b-8f8e-4070-8ab3-07b8fbe2a752">
+      <name>ВидРеализации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид реализации</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВидРеализацииМастера</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a58ba8c4-3e72-483a-a377-9785089cd7b0">
+      <name>ЦенаМастера</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена мастера</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="222733bc-d7b6-4d4c-b6fd-680dcb79ced1">
+      <name>ПроцентКомиссии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент комиссии</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c90eae62-8097-4fde-aa15-a44e0cbe8575">
+      <name>ЦенаПродажи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена продажи</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

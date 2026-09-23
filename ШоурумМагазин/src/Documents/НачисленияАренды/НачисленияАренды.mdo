@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3692235c-54ea-4240-93b0-f4ebddbe9bcd">
+  <producedTypes>
+    <objectType typeId="135b6fe3-0265-4822-bd0a-8ff45dcd4132" valueTypeId="001e3450-b564-4a83-ae43-04bc3d622963"/>
+    <refType typeId="1f67349d-a245-4b55-b8b8-e85259bd46f0" valueTypeId="74e46478-3040-4912-9e92-4ce57cb24a30"/>
+    <selectionType typeId="49895ea2-427d-4c5f-869d-8b202dbdd5f6" valueTypeId="7d5511d3-53f3-42fd-b4a8-04c2cf8b0d28"/>
+    <listType typeId="0074062a-1326-4998-82e2-6596ce11e81b" valueTypeId="c342b14d-e799-4a6e-abd5-2b2312065ac2"/>
+    <managerType typeId="046d3ff1-39f3-419d-9937-b9428ceb9872" valueTypeId="95963bcb-2e62-4a64-9a0d-99fc1bf5193d"/>
+  </producedTypes>
+  <name>НачисленияАренды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления аренды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачисленияАренды.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.РасчетПоАренде</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e8d96530-1215-4685-8a81-e2612f4ce243">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="8683a474-4012-4032-a170-b31a1853cd7a">
+    <producedTypes>
+      <objectType typeId="136ec160-453f-4a15-8598-6a1a0d283910" valueTypeId="9880aade-c430-4207-b38d-6616ceeb93cf"/>
+      <rowType typeId="f87105b6-706d-4f80-827e-17d92687a1c2" valueTypeId="dcfcc6e3-e5ba-4037-bb42-6fac1cd2f656"/>
+    </producedTypes>
+    <name>Начисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисления</value>
+    </synonym>
+    <attributes uuid="67644e98-99d8-449e-884f-b39107601547">
+      <name>Мастер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Мастер</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ВидКонтрагента</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыКонтрагентов.EnumValue.Мастер</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9e6aa619-0c6f-4c02-a5ee-48a8c22ddbdc">
+      <name>Полка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Полка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПолкиИСтеллажи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c8a01761-5c80-43d7-877a-fc5dde5047b7">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+</mdclass:Document>

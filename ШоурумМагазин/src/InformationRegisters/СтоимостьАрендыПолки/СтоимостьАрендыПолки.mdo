@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e50b5da-dff4-411d-b6c9-1853e4595fdf">
+  <producedTypes>
+    <selectionType typeId="c8211f5f-8ca6-4609-8c0a-9c486466754a" valueTypeId="00c8b624-2665-4346-8dc0-31c3e826de91"/>
+    <listType typeId="d936c103-2654-4d16-bdb6-f57d0699fb94" valueTypeId="d6d4fada-59b4-4ec8-addd-513aed43b219"/>
+    <managerType typeId="71480d55-cbbc-49aa-80cb-841d80fd7df6" valueTypeId="3e84c935-93ce-4f13-916e-f7210d30edc4"/>
+    <recordSetType typeId="6b4fbdd0-c2e1-4cdd-a38c-9012e25c5bd6" valueTypeId="0b9010d2-c2af-453b-b12a-cc2d25c364a7"/>
+    <recordKeyType typeId="21810e8e-5da2-4f52-870e-eea2950cfb8c" valueTypeId="050f924a-683b-4387-ab01-3dc40c0c240d"/>
+    <recordType typeId="f0c3cd30-2b46-4e99-baa7-c5034e545eb4" valueTypeId="e06053d9-5ada-4b8e-af98-ff47ae488399"/>
+    <recordManagerType typeId="18194971-6020-4ce6-834e-551f72f81f29" valueTypeId="edd85c86-98f5-49c3-bd8f-245e718c854b"/>
+  </producedTypes>
+  <name>СтоимостьАрендыПолки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость аренды полки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3213e5c0-4595-4c7f-abdf-61da64dc36b8">
+    <name>СтоимостьАренды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость аренды</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d3713ddb-f1fc-4162-b5cb-5ce44fccdc3e">
+    <name>ПолкаСтелаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полка/Стелаж</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПолкиИСтеллажи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="daf29002-8a6f-4928-89e3-f52d99bc59f9">
+  <name>РегистрыНакопления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистры накопления</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>AccumulationRegister.ОстаткиНоменклатуры</content>
+  <content>AccumulationRegister.Продажи</content>
+  <content>AccumulationRegister.РасчетыСМастерами</content>
+  <content>AccumulationRegister.РасчетПоАренде</content>
+</mdclass:Subsystem>
