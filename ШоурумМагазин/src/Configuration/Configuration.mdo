@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a04d4d48-7e38-4dac-8d0f-dd7bb4b1584c">
-  <name>ШоурумМагазин</name>
+  <name>ShowRoomShop</name>
   <synonym>
     <key>ru</key>
-    <value>Шоурум магазин</value>
+    <value>Show room shop</value>
   </synonym>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="33015108-b244-47a0-8b11-d43f8b785deb"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="de39c9d7-d13b-430d-8278-95debe513ec4"/>
