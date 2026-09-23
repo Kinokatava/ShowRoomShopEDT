@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad51e81c-f02e-4875-b157-5f488e542196">
+  <producedTypes>
+    <objectType typeId="94aa6e7f-f015-4b6f-93a4-ea828083f2a2" valueTypeId="d8aedb36-8c53-4aa6-b12c-189adfd718ee"/>
+    <refType typeId="842e2682-9775-4f0d-83f6-e6b8721e947f" valueTypeId="64a76bd4-982a-4cb0-9717-47d8d8da97d1"/>
+    <selectionType typeId="91842918-9dee-4fb9-967c-bf06a4a494b8" valueTypeId="cea67b0d-8fcc-48c2-a1b8-c9a3a4f16f1d"/>
+    <listType typeId="7b84fa43-88e2-4672-88ed-8cee36fb32c8" valueTypeId="bd5b0f6e-76e9-4581-a0aa-887d7ac246d3"/>
+    <managerType typeId="dae43190-899d-4fa4-ab21-955ab08a592c" valueTypeId="e74bcc6c-f856-496f-83f1-2f8c9eb9dae0"/>
+  </producedTypes>
+  <name>Мамалыаг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мамалыаг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Мамалыаг.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Мамалыаг.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="24edd300-475a-46b5-ade7-3d8198e62aa1">
+    <name>КУАК</name>
+    <synonym>
+      <key>ru</key>
+      <value>КУАК</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
