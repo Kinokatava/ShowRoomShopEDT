@@ -17,12 +17,44 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Начислено</dataPath>
+			<field>Начислено</field>
+			<title xsi:type="xs:string">Начислено</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Выплачено</dataPath>
+			<field>Выплачено</field>
+			<title xsi:type="xs:string">Выплачено</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	РасчетыСМастерамиОстатки.Мастер КАК Мастер,
-	РасчетыСМастерамиОстатки.СуммаОстаток КАК СуммаОстаток
+	Расчеты.Мастер КАК Мастер,
+	СУММА(ВЫБОР КОГДА Расчеты.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход) ТОГДА Расчеты.Сумма ИНАЧЕ 0 КОНЕЦ) КАК Начислено,
+	СУММА(ВЫБОР КОГДА Расчеты.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход) ТОГДА Расчеты.Сумма ИНАЧЕ 0 КОНЕЦ) КАК Выплачено,
+	СУММА(ВЫБОР КОГДА Расчеты.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход) ТОГДА Расчеты.Сумма ИНАЧЕ -Расчеты.Сумма КОНЕЦ) КАК СуммаОстаток
 ИЗ
-	РегистрНакопления.РасчетыСМастерами.Остатки КАК РасчетыСМастерамиОстатки</query>
+	РегистрНакопления.РасчетыСМастерами КАК Расчеты
+ГДЕ
+	Расчеты.Период &lt;= &amp;Период
+СГРУППИРОВАТЬ ПО
+	Расчеты.Мастер</query>
 	</dataSet>
 	<totalField>
 		<dataPath>СуммаОстаток</dataPath>

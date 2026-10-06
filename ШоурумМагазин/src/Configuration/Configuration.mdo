@@ -40,33 +40,35 @@
   <subsystems>Subsystem.Документы</subsystems>
   <subsystems>Subsystem.Отчеты</subsystems>
   <subsystems>Subsystem.РегистрыНакопления</subsystems>
+  <subsystems>Subsystem.РегистрыСведений</subsystems>
   <subsystems>Subsystem.Справочники</subsystems>
-  <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.ПолкиИСтеллажи</catalogs>
-  <catalogs>Catalog.Сотрудники</catalogs>
-  <documents>Document.АрендаПолки</documents>
-  <documents>Document.ВыкладкаИзделийНаПолку</documents>
   <documents>Document.ВыплатаМастеру</documents>
+  <documents>Document.ДоговорАрендыПолки</documents>
   <documents>Document.ЗаказПоставщику</documents>
   <documents>Document.НачисленияАренды</documents>
   <documents>Document.ОплатаАренды</documents>
   <documents>Document.ПоступлениеТовара</documents>
   <documents>Document.ПриемкаИзделийМастера</documents>
   <documents>Document.Продажа</documents>
+  <documents>Document.РазмещениеТоваровНаПолке</documents>
   <enums>Enum.ВидРеализацииМастера</enums>
   <enums>Enum.ВидыКонтрагентов</enums>
   <enums>Enum.ВидыНоменклатуры</enums>
-  <enums>Enum.СтатусСотрудника</enums>
+  <reports>Report.ВыручкаИДоходы</reports>
+  <reports>Report.ДвижениеТоваров</reports>
   <reports>Report.ЗадолженностьМастерам</reports>
   <reports>Report.ЗадолженностьПоАренде</reports>
-  <reports>Report.ОстаткиНоменлатуры</reports>
+  <reports>Report.ЗанятостьПолок</reports>
+  <reports>Report.ОстаткиНоменклатуры</reports>
+  <reports>Report.ПринятоОтМастеров</reports>
   <reports>Report.Продажи</reports>
-  <informationRegisters>InformationRegister.СтоимостьАрендыПолки</informationRegisters>
-  <informationRegisters>InformationRegister.ЦенаИзделийМастеров</informationRegisters>
-  <informationRegisters>InformationRegister.ЦенаСобственныхТоваров</informationRegisters>
+  <reports>Report.ЧтоНаПолках</reports>
+  <informationRegisters>InformationRegister.ЗанятостьПолок</informationRegisters>
+  <informationRegisters>InformationRegister.РазмещениеТоваров</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНоменклатуры</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.РасчетПоАренде</accumulationRegisters>

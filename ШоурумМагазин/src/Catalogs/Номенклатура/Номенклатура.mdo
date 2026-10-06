@@ -81,4 +81,38 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="08eb1dd2-c59b-4eaf-88de-ba5b3e7fd1c5">
+    <name>ПроцентКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент комиссии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e6063abb-8f06-4cbb-b07d-67ea3fec98d5">
+    <name>ВидРеализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид реализации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидРеализацииМастера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>

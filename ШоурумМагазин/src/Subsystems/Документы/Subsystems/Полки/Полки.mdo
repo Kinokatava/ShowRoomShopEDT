@@ -7,6 +7,5 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>Document.ВыкладкаИзделийНаПолку</content>
   <parentSubsystem>Subsystem.Документы</parentSubsystem>
 </mdclass:Subsystem>

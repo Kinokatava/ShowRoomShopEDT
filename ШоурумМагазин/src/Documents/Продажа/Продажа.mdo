@@ -28,24 +28,6 @@
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="d590ed8b-f3f5-49ff-b3ea-932cab4f32c1">
-    <name>ИтогоДоходМагазина</name>
-    <synonym>
-      <key>ru</key>
-      <value>Итого доход магазина</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <tabularSections uuid="78a60a94-bad0-43f2-a7cf-5bb3026e3624">
     <producedTypes>
       <objectType typeId="f688a5f3-93c5-4d3c-8775-ba054eb285a9" valueTypeId="9ceb3b88-4ed5-418e-bc9f-a3a44fed0387"/>
@@ -109,74 +91,6 @@
       <synonym>
         <key>ru</key>
         <value>Сумма</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="39360933-1c6d-471e-8949-5af4ecdd55db">
-      <name>ВидРеализации</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид реализации</value>
-      </synonym>
-      <type>
-        <types>EnumRef.ВидРеализацииМастера</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="0b1d846e-ac83-48a4-825b-f51fda127771">
-      <name>Мастер</name>
-      <synonym>
-        <key>ru</key>
-        <value>Мастер</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Контрагенты</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <choiceParameters>
-        <name>Отбор.ВидКонтрагента</name>
-        <value xsi:type="core:ReferenceValue">
-          <value>Enum.ВидыКонтрагентов.EnumValue.Мастер</value>
-        </value>
-      </choiceParameters>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="c6814e17-0b5c-4eb4-95fb-6ea946debec0">
-      <name>СуммаМастеру</name>
-      <synonym>
-        <key>ru</key>
-        <value>Сумма мастеру</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="c1cf3ae6-7155-4115-815b-d2d92ae7bd07">
-      <name>СуммарныйДоход</name>
-      <synonym>
-        <key>ru</key>
-        <value>Суммарный доход</value>
       </synonym>
       <type>
         <types>Number</types>

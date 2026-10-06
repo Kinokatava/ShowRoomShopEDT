@@ -9,6 +9,11 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.Продажи</content>
   <content>Report.ЗадолженностьМастерам</content>
-  <content>Report.ОстаткиНоменлатуры</content>
+  <content>Report.ОстаткиНоменклатуры</content>
   <content>Report.ЗадолженностьПоАренде</content>
+  <content>Report.ВыручкаИДоходы</content>
+  <content>Report.ЗанятостьПолок</content>
+  <content>Report.ЧтоНаПолках</content>
+  <content>Report.ПринятоОтМастеров</content>
+  <content>Report.ДвижениеТоваров</content>
 </mdclass:Subsystem>

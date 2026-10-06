@@ -28,14 +28,42 @@
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОборот</dataPath>
+			<field>КоличествоОборот</field>
+			<title xsi:type="xs:string">Количество</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПродажиОборот</dataPath>
+			<field>СуммаПродажиОборот</field>
+			<title xsi:type="xs:string">Сумма продажи</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ПродажиОбороты.Номенклатура КАК Номенклатура,
+	ПродажиОбороты.КоличествоОборот КАК КоличествоОборот,
+	ПродажиОбороты.СуммаПродажиОборот КАК СуммаПродажиОборот,
 	ПродажиОбороты.Мастер КАК Мастер,
 	ПродажиОбороты.СуммаМастеруОборот КАК СуммаМастеруОборот,
 	ПродажиОбороты.ДоходМагазинуОборот КАК ДоходМагазинуОборот
 ИЗ
-	РегистрНакопления.Продажи.Обороты КАК ПродажиОбороты</query>
+	РегистрНакопления.Продажи.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК ПродажиОбороты</query>
 	</dataSet>
 	<totalField>
 		<dataPath>ДоходМагазинуОборот</dataPath>
@@ -79,51 +107,39 @@
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 	</parameter>
+	<defaultSettings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+		<dcsset:selection>
+			<dcsset:item xsi:type="dcsset:SelectedItemField">
+				<dcsset:field>Номенклатура</dcsset:field>
+			</dcsset:item>
+		</dcsset:selection>
+		<dcsset:item xsi:type="dcsset:StructureItemGroup">
+			<dcsset:groupItems>
+				<dcsset:item xsi:type="dcsset:GroupItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:groupType>Items</dcsset:groupType>
+					<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+				</dcsset:item>
+			</dcsset:groupItems>
+		</dcsset:item>
+	</defaultSettings>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаМастеруОборот</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ДоходМагазинуОборот</dcsset:field>
+					<dcsset:field>Номенклатура</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Мастер</dcsset:field>
+						<dcsset:field>Номенклатура</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-				<dcsset:item xsi:type="dcsset:StructureItemGroup">
-					<dcsset:groupItems>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Номенклатура</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-					</dcsset:groupItems>
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>
