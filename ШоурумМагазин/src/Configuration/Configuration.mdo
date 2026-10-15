@@ -41,6 +41,7 @@
   <subsystems>Subsystem.Отчеты</subsystems>
   <subsystems>Subsystem.РегистрыНакопления</subsystems>
   <subsystems>Subsystem.Справочники</subsystems>
+  <constants>Constant.Фв</constants>
   <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.ЕдиницыИзмерения</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
