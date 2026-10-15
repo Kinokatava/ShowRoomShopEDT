@@ -8,9 +8,9 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>2352359f-5fd4-4ba4-8f65-112f87bc9613</content>
-  <subsystems>Заказ</subsystems>
-  <subsystems>Приемка</subsystems>
   <subsystems>Аренда</subsystems>
+  <subsystems>Заказ</subsystems>
   <subsystems>Полки</subsystems>
+  <subsystems>Приемка</subsystems>
   <subsystems>Продажа</subsystems>
 </mdclass:Subsystem>
